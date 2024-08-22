@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+	
+	float nota;
+	char aluno[50];
+	
+	printf("Digite o nome do aluno: ");
+	scanf("%s", aluno);
+	
+	printf("Digite a nota: ");
+	scanf("%f", &nota);
+	
+	if(nota >= 7.0){
+		printf("O aluno %s foi aprovado! Parabens!", aluno);
+	}
+	if(nota < 7.0){
+		printf("O aluno %s foi reprovado! Estude mais!", aluno);
+	}
+	
+		
+}
