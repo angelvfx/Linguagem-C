@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main(){
+	
+	int Numero_de_provas;
+	int N = 0;
+	float Media, NotaFinal;
+	float Nota_da_prova[30];
+	int numero = 1;
+	int BOSTA;
+	
+	printf("Digite a quantidade de trimestres: ");
+   	 scanf("%d", &Numero_de_provas);
+    
+    BOSTA = Numero_de_provas;
+    
+	for(N = 0; N < Numero_de_provas; N++){
+    
+    printf("Digite a nota da prova %d: ", numero);
+        scanf("%f", &Nota_da_prova[N]); 
+        numero++;
+		}
+	
+	for(N = 0; N < Numero_de_provas; N++){
+		Media += Nota_da_prova[N];
+	}
+		NotaFinal = Media/BOSTA;
+	
+		printf("\nA media do aluno foi: %.2f", NotaFinal);
+		
+		//CALCULAR QUANTO PRECISA TIRAR 
+		
+		if(NotaFinal >= 7){
+			printf("\nParabens! voce passou por media!");
+		} else{
+			
+			float notaREC;
+			notaREC = 15-(NotaFinal*2);	
+			
+			printf("\nVoce precisara de %.2f para passar na recuperacao.", notaREC);	
+		}
+
+}
