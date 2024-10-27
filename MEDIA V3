@@ -39,7 +39,7 @@ int main(){
 			
 			printf("\nVoce precisara de %.1f para passar na recuperacao.", notaREC);
 			
-			notaACE = notaREC/0.056;
+			notaACE = notaREC/0.22;
 			printf("\nVoce precisa acertar %0.f questoes para passar.", notaACE);
 				
 		}
